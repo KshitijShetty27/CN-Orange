@@ -9,9 +9,9 @@
 
 Implement a **Topology Change Detector** using an SDN controller (POX) and Mininet that:
 
-- 🔍 Monitors switch and link events **dynamically** in real time
-- 🗺️ Maintains and **updates** an in-memory topology map on every change
-- 📋 **Displays and logs** all topology additions and removals
+-  Monitors switch and link events **dynamically** in real time
+-  Maintains and **updates** an in-memory topology map on every change
+-  **Displays and logs** all topology additions and removals
 
 ---
 
