@@ -1,11 +1,11 @@
-# 🌐 CN-Orange | Task 21 — SDN Topology Change Detector
+# CN-Orange | Task 21 — SDN Topology Change Detector
 
 > **Course:** Computer Networks | **Controller:** POX | **Simulator:** Mininet  
 > **Student:** KSHITIJ SATISH SHETTY | **SRN:** PES1UG24AM143 | **Problem:** Orange SDN Mininet Simulation
 
 ---
 
-## 📌 Problem Statement
+## Problem Statement
 
 Implement a **Topology Change Detector** using an SDN controller (POX) and Mininet that:
 
@@ -15,7 +15,7 @@ Implement a **Topology Change Detector** using an SDN controller (POX) and Minin
 
 ---
 
-## 🏗️ Topology
+## Topology
 
 ```
  h1 ── [s1] ── [s2] ── [s3] ── h3
@@ -31,7 +31,7 @@ Implement a **Topology Change Detector** using an SDN controller (POX) and Minin
 
 ---
 
-## ⚙️ Setup & Execution
+## Setup & Execution
 
 ### Prerequisites
 
@@ -57,7 +57,7 @@ sudo apt-get install mininet -y
 
 ---
 
-### ▶️ Running
+### Running
 
 **Terminal 1 — Start POX Controller**
 ```bash
@@ -72,9 +72,9 @@ sudo mn --controller=remote --topo linear,3
 
 ---
 
-## 🧪 Test Scenarios
+## Test Scenarios
 
-### ✅ Scenario 1 — Normal Link Discovery
+### Scenario 1 — Normal Link Discovery
 
 After both terminals are running, switches connect and links are auto-discovered via LLDP:
 
@@ -90,7 +90,7 @@ INFO:topology_detector:Current Topology: [(1, 2), (2, 3)]
 
 ---
 
-### ❌➡️✅ Scenario 2 — Link Failure & Recovery
+### Scenario 2 — Link Failure & Recovery
 
 From Mininet CLI:
 ```bash
@@ -112,7 +112,7 @@ INFO:topology_detector:Current Topology: [(2, 3), (1, 2)]
 
 ---
 
-## 🖼️ Proof of Execution
+## Proof of Execution
 
 ### 1️⃣ POX Controller Started
 ![POX Controller Start](screenshots/sc1_pox_started.png)
@@ -144,7 +144,7 @@ INFO:topology_detector:Current Topology: [(2, 3), (1, 2)]
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ```
 ┌──────────────────────────────────────┐
@@ -174,7 +174,7 @@ INFO:topology_detector:Current Topology: [(2, 3), (1, 2)]
 
 ---
 
-## 📊 SDN Concepts Demonstrated
+## SDN Concepts Demonstrated
 
 | Concept | Implementation |
 |---|---|
@@ -185,7 +185,7 @@ INFO:topology_detector:Current Topology: [(2, 3), (1, 2)]
 
 ---
 
-## 📚 References
+## References
 
 1. [POX Documentation](https://noxrepo.github.io/pox-doc/html/)
 2. [Mininet Walkthrough](http://mininet.org/walkthrough/)
